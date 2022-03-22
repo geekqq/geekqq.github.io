@@ -35,7 +35,7 @@
 
     
         <div class="post-main-title">
-            在hexo博文中添加圖片的三種方法
+            在hexo博文中添加圖片的兩種方法
         </div>
         <div class="post-meta">
             2022-03-21
@@ -45,9 +45,9 @@
     <div class="post-md">
         <p>方法一：<br>(1)在hexo目录下，安装插件：</p>
 <p>npm install hexo-asset-image –save<br>(2)在hexo\source 目录下新建一个img文件夹，把图片放置在里面；<br>(3)在xxx.md文件中引用图片：</p>
-<p><img src="/img/header.jpg" alt="header"><br>方法二：<br>(1)在全局配置文件（hexo&#x2F;_config.yml)中将post_asset_folder设置为true；<br>(2)创建文章（在创建的时候，会在hexo&#x2F;source&#x2F;_post目录下，生成一个XXX.md文件和一个XXX的文件夹）：</p>
+<p><code>![header]( img/header.jpg)</code><br>方法二：<br>(1)在全局配置文件（hexo&#x2F;_config.yml)中将post_asset_folder设置为true；<br>(2)创建文章（在创建的时候，会在hexo&#x2F;source&#x2F;_post目录下，生成一个XXX.md文件和一个XXX的文件夹）：</p>
 <p>hexo new “XXX”<br>(3)把XXX这个博文需要展示的图片放在XXX文件夹目录下；<br>(4)在XXX.md文件中引入图片的方式：</p>
-
+<p><code>&#123;% asset_img example.jpg This is an example image %&#125;</code></p>
 
     </div>
 
